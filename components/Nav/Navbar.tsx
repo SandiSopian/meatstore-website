@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 const Navbar = () => {
   return (
-    <nav className="flex mx-auto items-center gap-6 bg-red-500 p-4 absolute inset-x-0 bottom-0 lg:relative lg:top-0 overflow-hidden lg:overflow-visible">
+    <nav className="flex fixed bottom-0 inset-x-0 items-center justify-around bg-red-500 p-4 text-white lg:static">
       <NavLink />
     </nav>
   );
