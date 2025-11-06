@@ -2,6 +2,7 @@ import Image from "next/image";
 import CategoriesProducts from "../components/CategoriesProducts";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import BenefitsSection from "@/components/BenefitsSection";
+import OrderSection from "@/components/OrderSection";
 
 export default function Home() {
   return (
@@ -40,6 +41,10 @@ export default function Home() {
           handal kami. Terima kasih telah memilih MeatSore sebagai mitra
           terpercaya Anda dalam memenuhi kebutuhan daging segar!
         </p>
+      </section>
+
+      <section id="order-section" className="mt-10">
+        <OrderSection />
       </section>
     </main>
   );
