@@ -60,3 +60,11 @@ export const featuredData = [
     img: ProductImg4,
   },
 ];
+
+export const aboutData = {
+  title: "Tentang MeatStore",
+  description:
+    "MeatStore adalah toko daging online terpercaya yang menyediakan berbagai jenis daging segar berkualitas tinggi. Kami berkomitmen untuk memberikan produk terbaik kepada pelanggan kami dengan harga yang kompetitif. Dengan layanan pengiriman cepat dan kemasan higienis, MeatStore adalah pilihan utama untuk kebutuhan daging Anda.",
+  img: "/aboutImg.webp",
+  contactWa: "+6281234567890",
+};

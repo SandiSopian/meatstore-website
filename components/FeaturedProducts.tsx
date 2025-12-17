@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { featuredData } from "@/data/homepageData";
+import { featuredData, aboutData } from "@/data/homepageData";
 
 const FeaturedProducts = () => {
   return (
@@ -23,9 +23,14 @@ const FeaturedProducts = () => {
               <div>
                 <h3 className="text-black">{product.name}</h3>
                 <p className="text-red-500 font-bold">{product.price}</p>
-                <div className="bg-green-500 text-white text-center p-1 rounded-lg w-40 mt-2 cursor-pointer">
+                <a
+                  href={`https://wa.me/${aboutData.contactWa}?text=Halo,%20saya%20ingin%20memesan%20produk%20${product.name}.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 text-white text-center p-1 rounded-lg w-40 mt-2 cursor-pointer block"
+                >
                   Pesan via WhatsApp
-                </div>
+                </a>
               </div>
             </div>
           </div>
