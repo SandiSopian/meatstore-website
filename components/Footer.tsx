@@ -4,7 +4,7 @@ import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="mb-18 bg-red-500 text-white p-6 text-center flex flex-col items-center justify-center gap-3">
+    <footer className="mb-18 mt-5 bg-red-500 text-white p-6 text-center flex flex-col items-center justify-center gap-3">
       <h1 className="text-2xl font-bold mb-2">Hubungi Kami</h1>
 
       <div className="flex flex-col items-start text-left">

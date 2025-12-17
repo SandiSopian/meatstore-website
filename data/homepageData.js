@@ -1,48 +1,40 @@
-import CategoryImg1 from "@/assets/category1-beef.png";
-import CategoryImg2 from "@/assets/category-2.png";
-import CategoryImg3 from "@/assets/category-3.png";
-import CategoryImg4 from "@/assets/category-4.png";
-import ProductImg1 from "@/assets/product-1.png";
-import ProductImg2 from "@/assets/product-2.png";
-import ProductImg3 from "@/assets/product-3.png";
-import ProductImg4 from "@/assets/product-4.png";
+import CategoryImg1 from "@/public/category1-beef.webp";
+import CategoryImg2 from "@/public/category2-chicken.webp";
+import CategoryImg3 from "@/public/category3-fish.webp";
+import ProductImg1 from "@/public/product1-chicken-meat.webp";
+import ProductImg2 from "@/public/product2-meat-rib.webp";
+import ProductImg3 from "@/public/product3jeroan-meat.webp";
+import ProductImg4 from "@/public/product4-fish.webp";
 
 // Hero section data
 export const heroData = {
   title: "Daging Segar Pilihan Keluarga",
   description:
     "Dapatkan daging segar berkualitas tinggi langsung dari peternak terpercaya. Pilihan terbaik untuk hidangan lezat Anda.",
-  img: "/heroBg.png",
+  img: "/heroBg.webp",
 };
 
 // Categories data
-export const homepageData = {
-  categories: [
-    {
-      id: 1,
-      title: "Daging Sapi",
-      img: CategoryImg1,
-    },
-    {
-      id: 2,
-      title: "Daging Ayam",
-      img: CategoryImg2,
-    },
-    {
-      id: 3,
-      title: "Daging Kambing",
-      img: CategoryImg3,
-    },
-    {
-      id: 4,
-      title: "Seafood",
-      img: CategoryImg4,
-    },
-  ],
-};
+export const categoriesData = [
+  {
+    id: 1,
+    title: "Daging Sapi",
+    img: CategoryImg1,
+  },
+  {
+    id: 2,
+    title: "Daging Ayam",
+    img: CategoryImg2,
+  },
+  {
+    id: 3,
+    title: "Seafood",
+    img: CategoryImg3,
+  },
+];
 
 // Featured products data
-export const featuredProducts = [
+export const featuredData = [
   {
     id: 1,
     name: "Daging Sapi Premium 1Kg",
@@ -57,8 +49,8 @@ export const featuredProducts = [
   },
   {
     id: 3,
-    name: "Daging Kambing Muda 1Kg",
-    price: 150000,
+    name: "Jeroan Ayam Mix 500g",
+    price: 35000,
     img: ProductImg3,
   },
   {

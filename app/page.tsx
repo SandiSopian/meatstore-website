@@ -6,7 +6,7 @@ import OrderSection from "@/components/OrderSection";
 
 export default function Home() {
   return (
-    <main className="p-6 pb-24 overflow-y-auto">
+    <main className="p-6 overflow-y-auto">
       <section id="hero-image">
         <Image
           src="/heroBg.png"
