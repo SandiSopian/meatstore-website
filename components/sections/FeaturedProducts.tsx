@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { featuredProducts } from "@/data/products";
+import { products } from "@/data/products";
 import { aboutData } from "@/data/home";
 
 const FeaturedProducts = () => {
@@ -8,7 +8,7 @@ const FeaturedProducts = () => {
     <div>
       <h2 className="mt-10">Produk Unggulan</h2>
       <ul className="flex flex-col ">
-        {featuredProducts.map((product) => (
+        {products.slice(0, 4).map((product) => (
           <div key={product.id}>
             <div className="flex w-full items-center gap-6 dark:bg-[#FFF4F4] rounded-lg shadow-lg p-4 mt-4">
               <div>
