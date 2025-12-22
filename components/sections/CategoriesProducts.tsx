@@ -1,20 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import { categoriesData } from "@/data/homepageData";
+import { categories } from "@/data/categories";
 
 const CategoriesProducts = () => {
   return (
     <div>
       <h2 className="mt-5">Kategori Daging Segar</h2>
       <ul className="grid grid-cols-3 md:grid-cols-4 gap-4 mt-4">
-        {categoriesData.map((category, id) => (
+        {categories.map((category, id) => (
           <div
             key={id}
             className="category-card p-2 h-40 bg-[#FFECEC] rounded-lg shadow-lg text-center"
           >
             <figure className="bg-white p-1 rounded-full">
               <Image
-                src={category.img}
+                src={category.image}
                 alt={category.title}
                 width={100}
                 height={100}
