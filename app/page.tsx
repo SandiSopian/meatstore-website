@@ -7,7 +7,7 @@ import { heroData, aboutData } from "@/data/home";
 
 export default function Home() {
   return (
-    <main className="p-6 overflow-y-auto">
+    <main className="p-6 overflow-y-auto flex-grow">
       <section id="hero-image">
         <Image
           src={heroData.img}
