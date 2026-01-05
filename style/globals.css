@@ -13,6 +13,10 @@ body {
   background-image: url("/bg-product.jpg");
 }
 
+@utility bg-products {
+  background-image: url("/bg-products.jpg");
+}
+
 @theme {
   --color-white: #fff;
   --color-black: #000;

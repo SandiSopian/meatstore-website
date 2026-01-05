@@ -63,7 +63,7 @@ const ProductDetailPage = async ({ params }: PageProps) => {
 
       <div className="p-4">
         <h1 className="mt-2 text-2xl font-semibold">{product.name}</h1>
-        <p className="text-slate-300 font-light italic">stok tersedia</p>
+        <p className="text-slate-600 font-light italic">stok tersedia</p>
 
         <p className="mt-1 text-red-500 font-bold">
           Rp {product.price}
