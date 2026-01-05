@@ -9,6 +9,10 @@ body {
   font-family: var(--font-primary), sans-serif;
 }
 
+@utility bg-product {
+  background-image: url("/bg-product.jpg");
+}
+
 @theme {
   --color-white: #fff;
   --color-black: #000;

@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import Button from "@/components/ui/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 import { aboutData } from "@/data/home";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -28,24 +30,26 @@ const ProductDetailPage = async ({ params }: PageProps) => {
     const router = useRouter();
 
     return (
-      <button
-        onClick={() => router.back()}
-        className="m-4 text-blue-500 underline"
-      >
-        back
+      <button onClick={() => router.back()} className="m-4">
+        <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center">
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            className="text-white font-bold"
+          />
+        </div>
       </button>
     );
   };
 
   return (
-    <div className="p-0">
-      <div className="relative bg-[#f4dfce] rounded-b-[100px] pb-6 mb-4">
+    <div className="p-0 h-screen">
+      <div className="relative bg-product bg-cover left justify-center">
         <div className="transparent">
           <BackButton />
         </div>
 
         <div className="relative w-full h-48 flex justify-center">
-          <div className="relative w-60 h-40 rounded-xl bg-white shadow">
+          <div className="relative w-60 h-40 rounded-xl overflow-hidden">
             <Image
               src={product.image}
               alt={product.name}
@@ -59,6 +63,7 @@ const ProductDetailPage = async ({ params }: PageProps) => {
 
       <div className="p-4">
         <h1 className="mt-2 text-2xl font-semibold">{product.name}</h1>
+        <p className="text-slate-300 font-light italic">stok tersedia</p>
 
         <p className="mt-1 text-red-500 font-bold">
           Rp {product.price}
