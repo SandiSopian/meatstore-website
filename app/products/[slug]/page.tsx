@@ -6,7 +6,6 @@ import Button from "@/components/ui/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import { aboutData } from "@/data/home";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

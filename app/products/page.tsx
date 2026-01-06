@@ -16,7 +16,7 @@ const Products = () => {
       : products.filter((p) => p.categoryId === selectedCategory);
 
   return (
-    <section className="h-screen">
+    <section className="min-h-screen flex flex-col">
       <h1 className="text-xl font-semibold mt-4 ml-4">
         Daging Segar Setiap Hari
       </h1>

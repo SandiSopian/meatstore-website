@@ -22,7 +22,7 @@ const NavLink = ({ onLinkClick }: NavLinkProps) => {
     { name: "Beranda", path: "/", icon: faHouseChimney },
     { name: "Produk", path: "/products", icon: faCartShopping },
     { name: "Tentang", path: "/about", icon: faCircleInfo },
-    { name: "Pesan", path: "/contact", icon: faWhatsapp },
+    { name: "Pesan", path: "/order", icon: faWhatsapp },
   ];
 
   return (
