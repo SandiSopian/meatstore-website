@@ -2,7 +2,13 @@ export const heroData = {
   title: "Daging Segar Pilihan Keluarga",
   description:
     "Dapatkan daging segar berkualitas tinggi langsung dari peternak terpercaya. Pilihan terbaik untuk hidangan lezat Anda.",
-  img: "/heroBg.webp",
+  bgHeroMobile: "/bgHeroMobileMain.webp",
+  bgHeroDesktop: "/bgHeroDesktopMain.webp",
+  bgHeroRight1: "/bgHeroRight1.webp",
+  bgHeroRight2: "/bgHeroRight2.webp",
+  bgHeroBottom1: "/bgHeroBottom1.webp",
+  bgHeroBottom2: "/bgHeroBottom2.webp",
+  productHero: "/productHeroMeat.webp",
 };
 
 export const aboutData = {
