@@ -8,9 +8,7 @@ import {
 
 const BenefitsSection = () => {
   return (
-    <div>
-      <h2 className="my-5">Benefit Untuk Anda</h2>
-
+    <div className="flex flex-col md:flex-row justify-evenly">
       <div className="mb-6 flex flex-col gap-6 bg-white text-black text-center max-w-xs mx-auto p-4 rounded-lg shadow-lg w-full">
         <div className="mt-4">
           <FontAwesomeIcon icon={faLeaf} className="text-2xl text-red-600" />

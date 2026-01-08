@@ -5,12 +5,11 @@ import { aboutData } from "@/data/home";
 
 const FeaturedProducts = () => {
   return (
-    <div>
-      <h2 className="mt-10">Produk Unggulan</h2>
-      <ul className="flex flex-col ">
+    <>
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.slice(0, 4).map((product) => (
           <div key={product.id}>
-            <div className="flex w-full items-center gap-6 dark:bg-[#FFF4F4] rounded-lg shadow-lg p-4 mt-4">
+            <div className="flex w-full lg:h-full items-center gap-6 dark:bg-[#FFF4F4] rounded-lg shadow-lg p-4 mt-4">
               <div>
                 <Image
                   src={product.image}
@@ -21,9 +20,16 @@ const FeaturedProducts = () => {
                 />
               </div>
 
-              <div>
-                <h3 className="text-black">{product.name}</h3>
-                <p className="text-red-500 font-bold">{product.price}</p>
+              <div className="xl:flex flex-col justify-evenly h-full">
+                <div>
+                  <h3 className="text-black">{product.name}</h3>
+                  <p className="text-red-500 font-bold">
+                    Rp{" "}
+                    {new Intl.NumberFormat("id-ID").format(product.price) +
+                      ",-"}
+                    /kg
+                  </p>
+                </div>
                 <a
                   href={`https://wa.me/${aboutData.contactWa}?text=Halo,%20saya%20ingin%20memesan%20produk%20${product.name}.`}
                   target="_blank"
@@ -37,7 +43,7 @@ const FeaturedProducts = () => {
           </div>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 

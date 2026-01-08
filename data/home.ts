@@ -4,6 +4,7 @@ export const heroData = {
     "Dapatkan daging segar berkualitas tinggi langsung dari peternak terpercaya. Pilihan terbaik untuk hidangan lezat Anda.",
   bgHeroMobile: "/bgHeroMobileMain.webp",
   bgHeroDesktop: "/bgHeroDesktopMain.webp",
+  bgHeroTablet: "/bgHeroTabletMain.webp",
   bgHeroRight1: "/bgHeroRight1.webp",
   bgHeroRight2: "/bgHeroRight2.webp",
   bgHeroBottom1: "/bgHeroBottom1.webp",
@@ -12,9 +13,9 @@ export const heroData = {
 };
 
 export const aboutData = {
-  title: "Tentang MeatStore",
+  title: "Tentang Kami",
   description:
-    "MeatStore adalah toko daging online terpercaya yang menyediakan berbagai jenis daging segar berkualitas tinggi. Kami berkomitmen untuk memberikan produk terbaik kepada pelanggan kami dengan harga yang kompetitif. Dengan layanan pengiriman cepat dan kemasan higienis, MeatStore adalah pilihan utama untuk kebutuhan daging Anda.",
-  img: "/aboutImg.webp",
+    "Kami menyediakan daging segar berkualitas tinggi langsung dari peternak lokal. Dengan pengalaman lebih dari 10 tahun, kami berkomitmen memberikan pelayanan terbaik untuk pelanggan.",
+  aboutImg: "/aboutSectionImg.webp",
   contactWa: "+6281234567890",
 };

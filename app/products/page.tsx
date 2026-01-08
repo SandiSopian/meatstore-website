@@ -71,7 +71,8 @@ const Products = () => {
 
             <div className="mt-auto flex flex-col gap-2">
               <p className="text-red-500 mt-2 font-bold text-center">
-                Rp. {product.price}/kg
+                Rp {new Intl.NumberFormat("id-ID").format(product.price) + ",-"}
+                /kg
               </p>
 
               <div className="flex items-center justify-center">
