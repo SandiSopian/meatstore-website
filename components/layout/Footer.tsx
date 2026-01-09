@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="mb-18 lg:mb-0 bg-red-500 text-white p-6 lg:px-24 lg:h-100 text-center lg:text-left flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-3">
+    <footer className="mb-18 lg:mb-0 bg-crimsonRed text-white p-6 lg:px-24 lg:h-100 text-center lg:text-left flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-3">
       <div className="lg:mb-40 gap-2 flex flex-col">
         <h1 className="text-2xl font-bold mb-2">Hubungi Kami</h1>
 

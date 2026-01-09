@@ -48,7 +48,7 @@ const ProductDetailPage = async ({ params }: PageProps) => {
         </div>
 
         <div className="relative w-full h-48 flex justify-center">
-          <div className="relative w-60 h-40 rounded-xl overflow-hidden">
+          <div className="relative w-60 lg:w-full h-40 lg:h-full rounded-xl overflow-hidden">
             <Image
               src={product.image}
               alt={product.name}
@@ -60,7 +60,7 @@ const ProductDetailPage = async ({ params }: PageProps) => {
         </div>
       </div>
 
-      <div className="p-4">
+      <div className="p-4 lg:flex flex-col lg:items-center lg:justify-center">
         <h1 className="mt-2 text-2xl font-semibold">{product.name}</h1>
         <p className="text-slate-600 font-light italic">stok tersedia</p>
 

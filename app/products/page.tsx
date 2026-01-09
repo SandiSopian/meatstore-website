@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { products } from "../../data/products";
+import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 
 const Products = () => {
@@ -16,7 +16,7 @@ const Products = () => {
       : products.filter((p) => p.categoryId === selectedCategory);
 
   return (
-    <section className="min-h-screen flex flex-col">
+    <section className="min-h-screen flex flex-col lg:mb-4">
       <h1 className="text-xl font-semibold mt-4 ml-4">
         Daging Segar Setiap Hari
       </h1>
@@ -50,7 +50,7 @@ const Products = () => {
       </div>
 
       {/* PRODUCT LIST */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mx-2">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 mx-4 mb-8">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
